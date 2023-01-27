@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.header {
+  position: relative;
+  background-color: #242A3A;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.header ul li.active::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+.header ul li.active a {
+  color: white;
+}
+.header ul li.active svg {
+  fill: white;
+}
+.header ul li svg {
+  margin-right: 10px;
+}
+.header ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: #B6B6B6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+.container table {
+  width: 100%;
+  border-spacing: 0;
+  font-weight: 500;
+}
+.container table thead {
+  background-color: #E9EAF1;
+  height: 76px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 5;
+}
+.container table thead th {
+  border: none;
+  text-align: center;
+  padding: 25px;
+}
+.container table tbody tr svg {
+  float: left;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.container table tbody td {
+  border-top: 1px solid #E9EAF1;
+  text-align: center;
+  padding: 15px;
+}
+/*# sourceMappingURL=analysis.css.map */
