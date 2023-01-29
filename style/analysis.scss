@@ -16,7 +16,7 @@ body{
 .container{
     margin:0 auto;
     width: 100%;
-    table{
+    .tb1{
         width: 100%;
         border-spacing: 0;
         font-weight: 500;
@@ -46,6 +46,41 @@ body{
                 text-align: center;
                 padding: 15px;
                 
+            }
+        }
+    }
+    .table2{
+        margin: 50px 25px;
+        .para{
+            font-size: 22px;
+            border-bottom: 1px solid #E9EAF1;
+            padding-bottom: 15px;
+        }
+        .tb2{
+            width: 100%;
+            border-spacing: 0;
+            thead{
+                th{
+                    font-weight: 500;
+                    font-size: 26px;
+                    text-align: left;
+                    &:nth-child(1){
+                        width: calc(100% / 3);
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 10px;
+                    }
+                    &:nth-child(1),&:nth-child(5),&:nth-child(7),&:nth-child(9){
+                        background-color: #E9EAF1;
+                    }
+                    &:nth-child(3){
+                        background-color: #BAC3D3;
+                    }
+                }
             }
         }
     }

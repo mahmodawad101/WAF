@@ -134,60 +134,85 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-.container .tb1 {
-  width: 100%;
-  border-spacing: 0;
-  font-weight: 500;
+.container h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 15px;
 }
-.container .tb1 thead {
-  background-color: #E9EAF1;
-  height: 76px;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 5;
+.container .wrapper {
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-.container .tb1 thead th {
-  border: none;
-  text-align: center;
-  padding: 25px;
-}
-.container .tb1 tbody tr svg {
-  float: left;
-  margin: 0 3px;
-  cursor: pointer;
-}
-.container .tb1 tbody td {
-  border-top: 1px solid #E9EAF1;
-  text-align: center;
-  padding: 15px;
-}
-.container .table2 {
-  margin: 50px 25px;
-}
-.container .table2 .para {
-  font-size: 22px;
-  border-bottom: 1px solid #E9EAF1;
-  padding-bottom: 15px;
-}
-.container .table2 .tb2 {
-  width: 100%;
-  border-spacing: 0;
-}
-.container .table2 .tb2 thead th {
+.container .wrapper h4 {
   font-weight: 500;
   font-size: 26px;
-  text-align: left;
 }
-.container .table2 .tb2 thead th:nth-child(1) {
-  width: 33.3333333333%;
+.container .wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.container .table2 .tb2 tbody tr td {
-  padding: 10px;
+.container .wrapper form label {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
-.container .table2 .tb2 tbody tr:nth-child(1), .container .table2 .tb2 tbody tr:nth-child(5), .container .table2 .tb2 tbody tr:nth-child(7), .container .table2 .tb2 tbody tr:nth-child(9) {
-  background-color: #E9EAF1;
+.container .wrapper form input {
+  width: 300px;
+  height: 40px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
 }
-.container .table2 .tb2 tbody tr:nth-child(3) {
-  background-color: #BAC3D3;
+.container .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-/*# sourceMappingURL=analysis.css.map */
+.container .btns button {
+  width: 345px;
+  height: 48px;
+  background: #242A3A;
+  border-radius: 6px;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.container .btns span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #B6B6B6;
+  cursor: pointer;
+}
+/*# sourceMappingURL=settings.css.map */

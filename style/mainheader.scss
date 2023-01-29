@@ -12,11 +12,23 @@
     ul{
         list-style: none;
         display: flex;
+
         li{
             display: flex;
             align-items: center;
             flex-direction: row;
             position: relative;
+            &::before{
+                
+            }
+            &:not(.settings li):hover::before{
+                content: '';
+                position: absolute;
+                bottom: 3px;
+                width: 100%;
+                height: 3px;
+                background-color: white;
+            }
             // justify-content: space-between;
             &.active::before{
                 content: '';
@@ -48,5 +60,44 @@
                 flex-direction: row;
             }
         }
+    }
+    .settings{
+        position: absolute;
+        // display: flex;
+        right: calc(100% / 3 - 100px);
+        top: calc(100% + 1px);
+        flex-direction: column;
+        background-color: white;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 0px;
+        width: 250px;
+        overflow: hidden;
+        display: none;
+        li{
+            transition: 0.3s;
+            margin:0px 0;
+            float: left;
+            &:hover,&.act{
+                background-color: #242A3A;
+                width: 100%;
+                color: white;
+                a{
+                    color: white;
+                    svg{
+                        fill: white;
+                    }
+                }
+            }
+            a{
+                padding: 5px;
+                color:#B6B6B6 ;
+            }
+        }
+    }
+    .acc:hover .settings{
+                display: flex;
+    
+    
     }
 }
